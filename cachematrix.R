@@ -15,6 +15,13 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 
 cacheSolve <- function(l = matrix()) {
-  b <- makeCacheMatrix(l)
-  b$makeInverse()
+  if(identical(x,l) == TRUE)
+  {
+    b <- makeCacheMatrix(x)
+    b$makeInverse()  
+  } else
+  {
+    b <- makeCacheMatrix(l)
+    b$makeInverse()
+  }
 }
