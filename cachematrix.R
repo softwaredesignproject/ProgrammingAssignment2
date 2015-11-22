@@ -4,13 +4,11 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-#   makeMatrix <- function(y = matrix(ncol = 2,nrow = 2))
-#   {
-#     x <<- y
-#     return(x)
-#   }
-#   list(makeMatrix = makeMatrix)
-  return(x)
+  makeInverse <- function(){
+    y <- matrix(x,nrow = 2, ncol = 2)
+    return(solve(y))
+  }
+  list(makeInverse = makeInverse)
 }
 
 
