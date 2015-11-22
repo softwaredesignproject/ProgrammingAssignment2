@@ -14,6 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-#cacheSolve <- function(make) {
- #       solve(m)
-#}
+cacheSolve <- function(l = matrix()) {
+  b <- makeCacheMatrix(l)
+  b$makeInverse()
+}
